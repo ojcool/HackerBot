@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hacker Bot Emergency services</title>
+    <!-- Include the css file   -->
+    <link defer href="https://uipathTestBot1.community.druidplatform.com/druid_webchat.css" rel="stylesheet">
+</head>
+
+<body>
+    …
+    …
+    <!-- Include the script file   -->
+    <script defer type="text/javascript"
+        src="https://uipathTestBot1.community.druidplatform.com/druid_webchat.js"></script>
+
+    <!-- Init the webchat component on document load -->
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function (event) {
+            DruidWebchat.init({
+                    < !--Common settings-- >
+            botId: "becaa5b4-d0db-4c96-49ff-08da6e6e62ce",
+                baseUrl: "https://comm-druid-api.azurewebsites.net",
+                queryParams: "", // pass queryParams to AuthorizeAsync method
+                UI: {
+                containerElement: null, // [MANDATORY] example: document.getElementById('druidContainerElement') -> specify the webchat expand DOM element
+            }
+                });
+            });
+    </script>
+</body>
+
+</html>
